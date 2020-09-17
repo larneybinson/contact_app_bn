@@ -1,0 +1,28 @@
+{
+  "printMode": "debug",
+  "environment": "development",
+  "driverVersion": "v1",
+  "redisUrl": "localhost",
+  "swagger": {
+    "info": {
+      "description": "This is a development server",
+      "version": "1.0.0",
+      "title": "Dev server"
+    },
+    "host": "localhost"
+  },
+  "google": {
+    "client": {
+      "id": "705028329598-n4hudh113qdij288mf0as3ll5js9ee6r.apps.googleusercontent.com",
+      "secret": "gbFsDTcRLDuXK5KUiOWwZhop",
+      "redirect": "http://localhost:5000/auth/google/callback"
+    },
+    "credentials": {
+      "access_token": "your access_token",
+      "token_type": "Bearer",
+      "expires_in": 3600,
+      "refresh_token": "your refresh_token"
+    }
+  },
+  "frontendUrl": "http://localhost:4200"
+}
