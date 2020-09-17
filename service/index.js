@@ -47,7 +47,7 @@ app.get('/auth/google/callback', (req, res) => {
 				console.log('Successfully authenticated');
 				tokenService.saveToken(tokens)
 				.then((data) => {
-					res.cookie("user-id", data.data);
+					res.cookie("user-id", data.data ,{domain: "devotics.io"});
 					res.redirect(`${config.get("frontendUrl")}`);
 					return data;
 				})
